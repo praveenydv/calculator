@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title id="information" >CALCULATOR</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <div ng-app="myapp" ng-controller="all">
+  <input  [(ngModel)]="value">
+   
+<div>
+<div>
+ <button   (click)="f(1)">1</button>
+ <button   (click)="f(2)">2</button>
+ <button   (click)="f(3)">3</button>
+ <button   (click)="sum()">+</button>
+</div>
+<div>
+ <button   (click)="f(4)">4</button>
+ <button   (click)="f(5)">5</button>
+ <button   (click)="f(6)">6</button>
+ <button   (click)="subtract()">-</button>
+</div>
+<div>
+ <button   (click)="f(7)">7</button>
+ <button   (click)="f(8)">8</button>
+ <button   (click)="f(9)">9</button>
+ <button   (click)="multiply()">*</button>
+</div>
+<div>
+ <button   (click)="reset()">CE</button>
+ <button   (click)="f(0)">0</button>
+ <button   (click)= "point()">.</button>
+ <button   (click)="divison()">/</button>
+  </div>
+</div>
+ <button  id="reset" (click)="equal()">=</button>
+</div>
+</ion-content>
+ 
